@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السيرة الذاتية رقية | معرض الأعمال</title>
+    <!-- رابط Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- رابط أيقونات Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- ⬇️ كود CSS المخصص لتحسين الشكل ⬇️ -->
+    <style>
+        /* تغيير لون الخلفية العامة */
+        body {
+            background-color: #f4f7f6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* خط أوضح */
+        }
+
+        /* تنسيق شريط التنقل */
+        .navbar {
+            background-color: #2c3e50 !important; /* لون غامق أنيق */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* تنسيق قسم التعريف (Hero) */
+        #about {
+        background: linear-gradient(135deg, #ec4899 0%, #f472b6 50%, #fbcfe8 100%);
+color: white;
+        }
+        #about h1 {
+            font-weight: 800;
+        }
+        #about p.lead {
+            color: rgba(255,255,255,0.8);
+        }
+
+        /* تنسيق الأزرار (Buttons) */
+        .btn-primary {
+            background-color: #2980b9;
+            border-color: #2980b9;
+            transition: all 0.3s ease; /* أنيميشن ناعم */
+        }
+        .btn-primary:hover {
+            background-color: #1f618d;
+            transform: translateY(-3px); /* حركة خفيفة عند الوقوف عليه */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* تنسيق كروت المهارات (Skills) */
+        .skills-card {
+            background: white;
+            border: none !important;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .skills-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            background-color: #eaf2f8; /* لون خفيف عند الوقوف */
+        }
+        .skills-card i {
+            font-size: 50px;
+        }
+
+        /* تنسيق كروت المشاريع (Projects) */
+        .project-card {
+            background: white;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        .project-card:hover {
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        .project-card .card-footer {
+            background-color: white;
+        }
+
+        /* تأثير على الأيقونات */
+        .display-4, .bi {
+            transition: transform 0.3s ease;
+        }
+        .skills-card:hover .display-4,
+        #contact .btn-outline-primary:hover .bi {
+            transform: scale(1.1); /* تكبير الأيقونة قليلاً */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- شريط التنقل (Navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">معرض أعمال رقية</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">عني</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">المهارات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">المشاريع</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">التواصل</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم التعريف (Hero Section) - مع تدرج لوني -->
+    <section id="about" class="py-5 text-center text-md-start">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                  <div class="text-center mb-3">
+                    <img src="my.photo.jpg" alt="Ruqaya" class="rounded-circle shadow mb-3" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #fff;">
+                     <h1 class="display-3 mb-3">Hello, I'm <span class="text-warning">Ruqaya</span></h1>
+<p class="lead mb-4">Management Information Systems Student | Aspiring Web Developer</p>
+<p>Passionate about web development, database management, and building innovative software solutions.</p>
+<a href="#contact" class="btn btn-warning btn-lg mt-3 fw-bold">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المهارات (Skills) - مع كروت محسنة -->
+   <section id="skills" class="py-5" style="background: linear-gradient(135deg, #fbcfe8 0%, #ffffff 100%);"
+    <div class="container text-center">
+        <h2 class="fw-bold mb-4">My Skills</h2>
+        <div class="row g-4 justify-content-center">
+            
+            <!-- Skill 1 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm p-3">
+                    <div class="card-body">
+                        <i class="bi bi-code-slash text-danger display-5 mb-3"></i>
+                        <h5 class="card-title fw-bold">Python</h5>
+                        <p class="card-text text-muted">Data analysis, scripting, and practical exercises.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill 2 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm p-3">
+                    <div class="card-body">
+                        <i class="bi bi-database text-primary display-5 mb-3"></i>
+                        <h5 class="card-title fw-bold">Database & SQL</h5>
+                        <p class="card-text text-muted">Designing & managing relational database systems.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm p-3">
+                    <div class="card-body">
+                        <i class="bi bi-bootstrap text-purple display-5 mb-3"></i>
+                        <h5 class="card-title fw-bold">HTML & Bootstrap</h5>
+                        <p class="card-text text-muted">Building responsive and customized web page layouts.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill 4 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm p-3">
+                    <div class="card-body">
+                        <i class="bi bi-diagram-3 text-success display-5 mb-3"></i>
+                        <h5 class="card-title fw-bold">Information Systems</h5>
+                        <p class="card-text text-muted">System analysis, accounting, and business logic.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <section id="projects" class="py-5" style="background: linear-gradient(135deg, #ffffff 0%, #fbcfe8 50%, #ffffff 100%);">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-4" style="color: #be185d;">My Projects</h2>
+        <div class="row g-4 justify-content-center">
+            
+            <!-- Project 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold" style="color: #db2777;">Database Management Project</h5>
+                        <p class="card-text text-muted">Designing and building a relational database using SQL for data organization.</p>
+                        <span class="badge bg-secondary">SQL</span>
+                        <span class="badge bg-secondary">Database</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold" style="color: #db2777;">Python Application</h5>
+                        <p class="card-text text-muted">A practical script/project for processing and analyzing data using Python libraries.</p>
+                        <span class="badge bg-info text-dark">Python</span>
+                        <span class="badge bg-info text-dark">Jupyter</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold" style="color: #db2777;">Personal Portfolio Website</h5>
+                        <p class="card-text text-muted">Developing a responsive personal portfolio website using HTML, CSS, and Bootstrap 5.</p>
+                        <span class="badge bg-primary">HTML/CSS</span>
+                        <span class="badge bg-primary">Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- قسم التواصل (Contact) -->
+   <section id="contact" class="py-5" style="background: linear-gradient(135deg, #fbcfe8 0%, #ffffff 100%);">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-3" style="color: #be185d;">Get In Touch</h2>
+        <p class="text-muted mb-4">Feel free to reach out via email or connect with me through my profiles!</p>
+        
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm p-4">
+                    <div class="card-body">
+                        <a href="mailto:your-email@example.com" class="btn btn-outline-danger btn-lg rounded-pill px-4 me-2 mb-2">
+                            <i class="bi bi-envelope-fill me-2"></i> Email Me
+                        </a>
+                        <a href="https://github.com" target="_blank" class="btn btn-dark btn-lg rounded-pill px-4 mb-2">
+                            <i class="bi bi-github me-2"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <footer class="text-center py-4 text-muted" style="background-color: #f8f9fa; border-top: 1px solid #fbcfe8;">
+    <div class="container">
+        <p class="mb-0">&copy; 2026 Ruqaya. All Rights Reserved.</p>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
